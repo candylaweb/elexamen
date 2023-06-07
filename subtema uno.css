@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: auto;
+}
+body{
+    background: rgba(211, 243, 108, 0.801);
+    width: 1250px;
+    height: 600px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(57, 133, 34);
+}
+p{
+    text-align: justify;
+    font-size: 29px;
+    color: rgb(78, 13, 67);
+}
+img{
+    display: block;
+    padding-left: 50px;
+}

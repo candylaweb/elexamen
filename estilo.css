@@ -1,0 +1,81 @@
+header{
+    width:500px;
+   text-align:center; /*si quitamos esto el letrero se va a la izquierda*/
+     margin:15px auto;
+     padding:15px;
+     border:5px solid rgb(238, 244, 244);
+     border-radius:19px;				/*cambiar tipo de degradado cambiar (linear) por radial-gradient*/
+     box-shadow:999 5px 5px 10px;			/*en el degradado podemos colocar: #00F 50%, #3FF 50% (4)*/
+     background:-moz-linear-gradient(top, rgb(224, 240, 246), #3FF);	/*degradado -mozilla-(3)-- top, bottom, left, right, center*/
+     background:-webkit-linear-gradient(bottom, rgb(142, 220, 241), rgb(158, 38, 146));	/*degradado -chrome-*/
+     background:-ms-linear-gradient(bottom, rgb(189, 221, 245), rgb(207, 255, 51));	/*degradado -explorer-*/
+     background:-o-linear-gradient(bottom, rgb(134, 167, 242), #3FF);	/*degradado -opera-*/
+     box-shadow: 5px 10px 8px #b2b5f1; /*sombra gris*/
+}
+body{
+    background: #88d9f0;
+}
+h1{
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 45px;
+}
+#ruta{
+ width: 990px;/*reducir el width para centrarlos*/
+ height: auto;
+ font-size: 24px;
+ margin: auto;
+ padding: auto;
+}
+ul{
+        list-style: none;
+ }
+ .nave li a{
+        background-color: rgb(95, 243, 243);
+        color: #000000;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        border:5px solid rgb(203, 142, 234);
+ }
+ /* NOTE: lo siguiente nos permite resaltar cada menu y submenu */
+    .nave li a:hover{
+        background-color: #6eeedd;
+    }
+    .nave > li{
+        float: left;
+        width: 320px;
+        height: 60px;
+    }
+    /* NOTE: con la siguiente instrucción los submenús desaparecen */
+    .nave li ul{
+        display: none;
+        position: absolute;    /* NOTE: es importante para agregar lo siguiente */
+        min-width: 140px;
+        width: 200px;
+    }
+    /* NOTE: lo siguiente le decimos que cuando pasemos el mouse aparezcan los submenus y que sean directos de ul */
+    .nave li:hover > ul{
+        display: block;
+    }
+    .info img{
+        padding-left: 50px;
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: auto;
+    }
+    .info2 img{
+        padding-left: 50px;
+        width: 300px;
+        height: 290px;
+        display: block;
+        margin: auto; 
+    }
+    .info3 img{
+        padding-left: 50px;
+        width: 370px;
+        height: 260px;
+        display: block;
+        margin: auto; 
+    }
